@@ -1,0 +1,25 @@
+Alias myB+         B+
+Alias myB-         B-
+
+Decay Upsilon(4S)
+1.0000 B+   myB-	             VSS;
+1.0000 myB+ B-			     VSS;
+Enddecay
+
+Decay myB+
+1.0000  Xps  gamma    PHOTOS  PHSP;
+Enddecay
+
+Decay myB-
+1.0000  anti-Xps  gamma   PHOTOS  PHSP;
+Enddecay
+
+Decay Xps
+1.0000  p+ anti-Sigma0	PHOTOS  PHSP;
+Enddecay
+
+Decay anti-Xps
+1.0000  anti-p- Sigma0	PHOTOS  PHSP;
+Enddecay
+
+End

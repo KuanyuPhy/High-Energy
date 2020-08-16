@@ -1,0 +1,29 @@
+Alias MyB0 B0
+Alias Myanti-B0 anti-B0
+ChargeConj MyB0 Myanti-B0
+
+Alias MyJpsi J/psi
+
+Alias MyK*0T K*0T
+Alias Myanti-K*0T anti-K*0T
+ChargeConj MyK*0T Myanti-K*0T
+
+Decay Upsilon(4S)
+1.0000 B0 anti-B0 MyB0 Myanti-B0        VSS_BMIX dm;
+Enddecay
+
+Decay MyB0
+1.0000 MyJpsi  MyK*0T    SVV_HELAMP  PKHplus PKphHplus PKHzero PKphHzero PKHminus PKphHminus ;
+Enddecay
+
+
+Decay MyJpsi
+1.0000 e+  e-    PHOTOS      PHOTOS  VLL;
+Enddecay
+
+Decay MyK*0T
+1.0000      K+  pi-                        PHOTOS VSS;
+Enddecay
+
+CDecay Myanti-B0
+End

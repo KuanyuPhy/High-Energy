@@ -1,0 +1,57 @@
+
+Author: Michael Prim
+E-Mail: michael.prim@kit.edu
+Last updated: 2012-04-19
+
+This fitting tutorial, shown at BAS 2012-05-10, is supposed to give an
+introduction to the usage of RooFit. Beside the basic usage, it also provides
+an example how to use libRooComplexPDF, an extension designed to deal with
+complex PDFs e.g. in Dalitz analysis, amplitude analysis or just fitting a 
+relativistic BW. It also covers libRooTatami, a wrapper class to do time-
+dependent fits within RooFit.
+
+- README:
+	This file
+
+- doc:
+	Contains talks and other further documentation about RooFit. All contents
+	can in principle found be on public webpages.
+
+- examples:
+	Contains a collection of examples for different problems.
+
+- exercises:
+	Contains the source code for the individual exercises.
+
+- lib:
+	This folder is generated during compilation and contains, in case of success,
+	all the compiled shared libraries.
+
+- libCacheIntegrator:
+	Source code of libCacheIntegrator (see Jeju BAS in Okt 2011 for some information
+	on that). It can help you to speed up numeric integrations.
+
+- libComplexPDF:
+	Source code of libComplexPDF. This library contains all the lineshapes etc...
+
+- libRooComplexPDF:
+	Source code of libRooComplexPDF. This library contains wrappers to libComplexPDF, such
+	that the lineshapes can be used in RooFit. It also contains some other PDFs that might
+	be useful. 
+
+- libRooTatami:
+	Source code of libRooTatami.
+
+- tuples:
+	Contains some tuples used during the examples:
+	- toymc_basic.root
+		The data file for the basic example
+	- toymc_dalitz.root
+		The data file for the Dalitz example
+
+setup_exercises.bash/csh
+	Script to setup a folder "worksheet" which contains all the exercises and Makefiles and should be edited
+	instead of the original exercises folder
+
+setup_environment_kekcc.bash/csh
+	Source the script to setup the environment on KEKCC computers
